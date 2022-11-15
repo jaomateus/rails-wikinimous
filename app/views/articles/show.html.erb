@@ -1,6 +1,8 @@
 <div class="container">
   <article>
-    <h1><%= @article.title %></h1>
+    <h1><%= @article.title %>
+      <%= link_to edit_article_path(@article) do %><i class="fa-regular fa-pen-to-square"></i><% end %>
+    </h1>
     <p><%= @article.content %></p>
   </article>
 </div>
