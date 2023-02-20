@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Edit Article</h1>
+    <div>
+        <%= form_with model: @article do |f| %>
+            <%= f.label :title %>
+            <%= f.text_field :title %>
+            <%= f.label :content %>
+            <%= f.text_field :content %>
+            <%= f.submit %>
+        <% end %>
+    </div>
+</div>

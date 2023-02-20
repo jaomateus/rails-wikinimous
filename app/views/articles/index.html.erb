@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <% @articles.each do |article| %>
+        <article class="mb-5">
+            <h2><%= link_to article.title, article_path(article) %></h2>
+            <p><%= article.content[0..100] %></p>
+        </article>
+    <% end %>
+</div>
